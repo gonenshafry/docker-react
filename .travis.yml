@@ -1,8 +1,6 @@
 sudo: required
 services:
   - docker
-environment:
-  - WATCHPACK_POLLING=true
 before_install:
   - docker build -t gonenshafry/docker-react -f Dockerfile.dev .
 script:
